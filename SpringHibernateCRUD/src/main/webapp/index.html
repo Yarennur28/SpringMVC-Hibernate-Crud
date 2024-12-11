@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Users</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        nav.navbar {
+            background-color: #343a40;
+            border-color: #343a40;
+        }
+        nav.navbar .navbar-brand, 
+        nav.navbar .nav > li > a {
+            color: #ffffff !important;
+        }
+        nav.navbar .nav > li.active > a {
+            background-color: #495057 !important;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .alert {
+            border: 1px solid #007bff;
+            background-color: #e9f5ff;
+            color: #004085;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        .container h3 {
+            color: #343a40;
+        }
+        .container p {
+            color: #6c757d;
+        }
+        .col-sm-3 {
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">CRUD</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="users/list">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Merhaba</h2>
+    <div class="alert alert-info">
+        <strong>SAYFAYA GİT!</strong> Veri tabanı işlemlerinin (CRUD) yapıldığı sayfa.
+        <a href="users/list" class="btn btn-primary">HOME</a>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <h3>KULLANILAN TEKNOLOJİLER</h3>
+            <p>JPA/Hibernate</p>
+            <p>SPRING MVC</p>
+            <p>Mysql</p>
+            <p>Thymeleaf</p>
+            <p>Jboss</p>
+            <p>Maven</p>
+            <p>Bootstrap</p>
+            <p>Tomcat &amp;</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>MİMARİ YAPI (KATMANLAR)</h3>
+            <p>- View</p>
+            <p>- Controller</p>
+            <p>- Servis</p>
+            <p>- DAO/Repository</p>
+            <p>- Entity/Domain</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Hakkında</h3>
+            <p>Bu sayfa, modern tasarım ve geliştirme araçları ile yapılmıştır.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
